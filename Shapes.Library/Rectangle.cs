@@ -11,7 +11,7 @@ namespace Shapes.Library
         public int SideLength { get; set; }
         public int Side2Length { get; set; }
 
-        public Rectangle(int side1Length, int side2Length)
+        public Rectangle(int side1Length, int side2Length) : base("Rectangle")
         {
             SideLength = side1Length;
             Side2Length = side2Length;

@@ -6,16 +6,21 @@ using System.Threading.Tasks;
 
 namespace Shapes.Library
 {
-    public class Shape
+    public abstract class Shape
     {
-        public virtual double CalculatePerimeter()
+        protected Shape(string name)
         {
-            throw new NotImplementedException();
+            Name = name;
+        }
+        protected string Name { get; set; }
+
+        public void PrintName()
+        {
+            Console.WriteLine(Name);
         }
 
-        public virtual double CalculateArea()
-        {
-            throw new NotImplementedException();
-        }
+        public abstract double CalculatePerimeter();
+
+        public abstract double CalculateArea();
     }
 }

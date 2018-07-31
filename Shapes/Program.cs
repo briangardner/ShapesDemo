@@ -18,7 +18,7 @@ namespace Shapes
                 new Square(5),
                 new Rectangle(8,4),
                 new Triangle(6,5,4),
-                new Shape(), //will throw exception when we try to do either calculation.
+                //new Shape(), //will throw exception when we try to do either calculation.
             };
 
             foreach (Shape shape in listOfShapes)
